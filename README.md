@@ -55,41 +55,31 @@ tot_project/
 
 ## Setup
 
-### 1. Install dependencies
+ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Set your environment variables
+Set your environment variables
 
-```bash
-export OPENAI_API_KEY=sk-...
-export OPENAI_MODEL=gpt-4o        # or any OpenAI-compatible model name
-```
 
-### 3. Start the Temporal dev server
 
-```bash
-# Install CLI: https://docs.temporal.io/cli
+Start the Temporal dev server
+
+
 temporal server start-dev
-```
 
-### 4. Start the worker (terminal 1)
 
-```bash
+Start the worker (terminal 1)
+
 python worker.py
-```
 
-### 5. Run a problem (terminal 2)
+Run the problem (terminal 2)
 
-```bash
-# Default problem (river crossing puzzle)
 python run.py
 
 # Custom problem
-python run.py --problem "What is the best strategy to win at chess in 10 moves?"
-```
 
 ## Configuration (ToTConfig)
 
